@@ -14,7 +14,7 @@ mongo = PyMongo(app)
 
 @app.route('/', methods=['GET'])
 def index():
-  return 'Hello !'
+  return 'Viewstats backend is working !!!'
 
 @app.route('/commercants', methods=['GET'])
 def get_all_commercants():
