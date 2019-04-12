@@ -12,6 +12,10 @@ app.config['MONGO_URI'] = 'mongodb://localhost:27017/viewstats'
 
 mongo = PyMongo(app)
 
+@app.route('/', methods=['GET'])
+def index():
+  return 'Hello !'
+
 @app.route('/commercants', methods=['GET'])
 def get_all_commercants():
   commercant = mongo.db.commercants
